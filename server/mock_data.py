@@ -37,3 +37,12 @@ purchase_orders = load_json_file('purchase_orders.json')
 
 # All data is now loaded from JSON files in the data/ directory
 # This allows for easier maintenance and updates of the sample data
+
+# Submitted restocking orders (persisted to JSON so they survive restarts)
+RESTOCK_ORDERS_FILE = os.path.join(DATA_DIR, 'restock_orders.json')
+restock_orders = load_json_file('restock_orders.json') if os.path.exists(RESTOCK_ORDERS_FILE) else []
+
+def save_restock_orders():
+    """Write submitted restocking orders back to disk"""
+    with open(RESTOCK_ORDERS_FILE, 'w') as f:
+        json.dump(restock_orders, f, indent=2)

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "RO-0001",
+    "status": "Submitted",
+    "order_date": "2026-11-05",
+    "expected_delivery": "2026-11-26",
+    "lead_time_days": 21,
+    "total_value": 6993.6,
+    "items": [
+      {
+        "sku": "FLT-405",
+        "name": "Oil Filter Cartridge",
+        "category": "Actuators",
+        "quantity": 564,
+        "unit_cost": 12.4,
+        "line_cost": 6993.6,
+        "lead_time_days": 21
+      }
+    ]
+  }
+]
